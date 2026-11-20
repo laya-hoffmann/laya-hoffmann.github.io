@@ -20,22 +20,24 @@ body{
     padding: 0px;
 }
 
+
 p{
     color:#000000
 }
 
 h1{
     font-family: Nudles;
+    font-size: 30px;
 }
 
 header{
     display:grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 20px;
-    border: 1px solid rgb(194, 138, 234);
-    height: 80px;
+    align-items: top;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 65px;
     
 }
 
@@ -45,7 +47,7 @@ span{
 
 h1 span{
     color: #c28aea;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 p span{
