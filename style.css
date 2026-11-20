@@ -151,10 +151,10 @@ a{
         gap: 20px; /*réduit l'espace entre les éléments*/
     }
     h1 {
-        font-size: 20px; /*réduit la taille du titre sur mobile*/
+        font-size: 24px; /*réduit la taille du titre sur mobile*/
     }
     h1 span {
-        font-size: 16px; /*réduit la taille du sous-titre sur mobile*/
+        font-size: 20px; /*réduit la taille du sous-titre sur mobile*/
     }
     header {
         padding: 10px; /*réduit le padding du header sur mobile*/
