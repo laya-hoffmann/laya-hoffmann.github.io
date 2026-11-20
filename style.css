@@ -42,18 +42,19 @@ header{
     height: 28px;    
 }
 
-span{
-    color: rgb(194, 138, 234);
-}
-
-h1 span{
+.taille{
+    font-size: 25px;
     color: #c28aea;
-    font-size: 20px;
 }
 
-p span{
-    color: rgb(194, 138, 234);
+.cadegage{
+    color: #000000;
 }
+
+span{
+    color: #c28aea;
+}
+
 
 .sous-titre {
     margin-top: 20px;
@@ -104,6 +105,10 @@ a{
     background-color: rgb(0, 0, 0);
     width: 100%;
     margin-bottom: 20px;
+}
+
+.projet{
+    margin-bottom: 30px;
 }
 
 
@@ -173,5 +178,11 @@ a{
     font-size: 25px;
     font-family: nudles;
     }
+
+    .cadegage{
+        display:none;
+    
+    }
+    
 
 }
