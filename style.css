@@ -1,3 +1,4 @@
+/*INTEGRATION TYPOS*/
 @font-face {
 font-family: nudles;
 src: url("font/Nudles-Bold.woff2") format("woff2");
@@ -9,7 +10,7 @@ src: url("font/strawford-regular-webfont.woff2") format("woff2");
 }
 
 
-
+/*CSS BALISES*/
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -18,18 +19,6 @@ body{
     max-width: 1900px; 
     margin: 0 auto;
     padding: 0px;
-}
-
-p{
-    color:#000000;
-    margin: 0;
-}
-
-
-h1{
-    font-family: nudles;
-    font-size: 30px;
-    margin: 0;
 }
 
 header{
@@ -42,24 +31,51 @@ header{
     height: 28px;    
 }
 
-.taille{
-    font-size: 25px;
-    color: #c28aea;
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.cadegage{
-    color: #000000;
+/*liens*/
+a{
+    color: rgb(194, 138, 234);
+    margin: 0;
+}
+
+h1{
+    font-family: nudles;
+    font-size: 30px;
+    margin: 0;
 }
 
 span{
     color: #c28aea;
 }
 
+p{
+    color:#000000;
+    margin-top: 26px;
+}
+
+
+/*CSS CLASS*/
+.taille{
+    font-size: 25px;
+    color: #c28aea;
+}
+
+/*ce qui n'est pas affiché sur mobile*/
+.cadegage{
+    color: #000000;
+}
 
 .sous-titre {
-    margin-top: 20px;
     font-size: 30px;
     font-family: nudles;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height:10px;
 }
 
 .grid{
@@ -69,20 +85,9 @@ span{
     justify-content: center;
     gap: 70px;
     padding: 30px;
-    margin-bottom: 50px;
 }
 
-
-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-a{
-    color: rgb(194, 138, 234);
-}
-
+/*bouton avant qu'on clique*/
 .button{
     color: rgb(0, 0, 0);
     padding: 6px;
@@ -92,7 +97,7 @@ a{
     align-items: center;
 }
 
-
+/*bouton quand on clique*/
 .button:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(194, 138, 234);
@@ -101,18 +106,16 @@ a{
     border: 1px solid rgb(194, 138, 234);
 }
 
+/*futur carroussel*/
 .bandeau{
     background-color: rgb(0, 0, 0);
     width: 100%;
     margin-bottom: 20px;
 }
 
-.projet{
-    margin-bottom: 30px;
-}
 
-
-.scrolling-text-container {  /*bandeau défilant (le contenant) */
+/*bandeau défilant (le contenant) */
+.scrolling-text-container {  
     width: 100%;
     height: 40px;
     background: rgb(255, 255, 255);
@@ -126,13 +129,15 @@ a{
 
 }
 
-.scrolling-text {  /*bandeau défilant (le contenu texte) */
+/*bandeau défilant (le contenu texte) */
+.scrolling-text {  
     white-space: nowrap; /*pour rester sur une ligne*/
     display: inline-block;
     animation: scroll-left 60s linear infinite; /*amène à l'animation créée*/
     font-size: 25px; 
 }
 
+/*version gros (le contenant texte) */
 .scrolling-text-container-big {
     width: 100%;
     height: 100px;
@@ -147,18 +152,50 @@ a{
 
 }
 
+/*version gros (le contenu texte) */
 .scrolling-text-big {
     white-space: nowrap;
     display: inline-block;
-    animation: scroll-left 60s linear infinite;
+    animation: scroll-left 30s linear infinite;
     font-size: 70px; 
 }
 
-@keyframes scroll-left { /*animation bandeau*/
+/*le hover des images*/
+
+.item-grid{
+            display: grid;
+            height: 500px;
+        }
+
+.item-grid a, .item-grid .fx{
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+}
+
+.item-grid .fx {
+            color:#000000;
+            background: #ffffffc4;
+            margin: 0;
+            opacity:0;
+            transition: .4s;
+            display: grid;
+            align-items:center;
+            justify-items: center;
+            height: 400px;
+}
+
+.item-grid:hover .fx{
+            opacity:1;
+}
+
+
+/*animation bandeau*/
+@keyframes scroll-left { 
     0% { transform: translateX(0); }  /*fais commencer à gauche*/
     100% { transform: translateX(-50%); } /*défile vers la droite*/
 }
 
+/*adaptation mobile*/
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr; /*une seule colonne sur mobile*/
@@ -183,6 +220,5 @@ a{
         display:none;
     
     }
-    
-
 }
+
