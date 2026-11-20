@@ -92,24 +92,53 @@ a{
 .bandeau{
     background-color: rgb(0, 0, 0);
     width: 100%;
+    margin-bottom: 20px;
 }
 
 
-.scrolling-text-container {
+.scrolling-text-container {  /*bandeau défilant (le contenant) */
     width: 100%;
     height: 40px;
-    background: rgb(194, 138, 234);
+    background: rgb(255, 255, 255);
+    overflow: hidden; /*pour pas qu'on voit la fin*/
+    display: flex; /*devient parent du texte*/
+    align-items: center; 
+    position: relative; /*pour pouvoir déplacer le texte*/
+    color: rgb(194, 138, 234); 
+    margin-bottom: 50px;
+    border: 1px solid rgb(194, 138, 234); 
+
+}
+
+.scrolling-text {  /*bandeau défilant (le contenu texte) */
+    white-space: nowrap; /*pour rester sur une ligne*/
+    display: inline-block;
+    animation: scroll-left 60s linear infinite; /*amène à l'animation créée*/
+    font-size: 25px; 
+}
+
+.scrolling-text-container-big {
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
     overflow: hidden;
     display: flex;
     align-items: center;
     position: relative;
-    color: #ffffff;
+    color: rgb(194, 138, 234);
     margin-bottom: 50px;
+    border: 1px solid rgb(194, 138, 234);
+
 }
 
-.scrolling-text {
+.scrolling-text-big {
     white-space: nowrap;
     display: inline-block;
-    animation: scroll-text 100s linear infinite;
-    font-size: 25px; 
+    animation: scroll-left 60s linear infinite;
+    font-size: 70px; 
+}
+
+@keyframes scroll-left { /*animation bandeau*/
+    0% { transform: translateX(0); }  /*fais commencer à gauche*/
+    100% { transform: translateX(-50%); } /*défile vers la droite*/
 }
