@@ -1,11 +1,11 @@
 @font-face {
-font-family: Nudles;
-src: url(Nudles.woff2) format("woff2");
+font-family: nudles;
+src: url("font/Nudles-Bold.woff2") format("woff2");
 }
 
 @font-face {
-font-family: Strawford;
-src: url(strawford-regular-webfont.woff2) format("woff2");
+font-family: strawford;
+src: url("font/strawford-regular-webfont.woff2") format("woff2");
 }
 
 
@@ -13,7 +13,7 @@ src: url(strawford-regular-webfont.woff2) format("woff2");
 body{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-family: Strawford;
+    font-family: strawford;
     font-size: 20px;
     max-width: 1900px; 
     margin: 0 auto;
@@ -25,7 +25,7 @@ p{
 }
 
 h1{
-    font-family: Nudles;
+    font-family: nudles;
     font-size: 30px;
 }
 
