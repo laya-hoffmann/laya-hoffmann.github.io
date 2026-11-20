@@ -161,5 +161,9 @@ a{
         padding: 10px; /*réduit le padding du header sur mobile*/
         height: auto; /*ajuste la hauteur automatiquement sur mobile*/
     }
+    .sous-titre {
+    font-size: 25px;
+    font-family: nudles;
+}
 
 }
