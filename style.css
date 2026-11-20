@@ -156,4 +156,9 @@ a{
     h1 span {
         font-size: 16px; /*réduit la taille du sous-titre sur mobile*/
     }
+    header {
+        padding: 10px; /*réduit le padding du header sur mobile*/
+        height: auto; /*ajuste la hauteur automatiquement sur mobile*/
+    }
+
 }
