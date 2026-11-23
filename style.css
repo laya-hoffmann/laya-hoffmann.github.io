@@ -155,13 +155,6 @@ p{
     transition: 0.5s background;
 }
 
-/*futur carroussel*/
-.bandeau{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 .menu{
     background-color: #c28aea;
 }
@@ -182,7 +175,7 @@ p{
     position: relative; /*pour pouvoir déplacer le texte*/
     color: rgb(194, 138, 234); 
     margin-bottom: 50px;
-    border: 1px solid rgb(194, 138, 234); 
+    border: 2px solid rgb(194, 138, 234); 
 
 }
 
@@ -205,7 +198,7 @@ p{
     position: relative;
     color: rgb(194, 138, 234);
     margin-bottom: 50px;
-    border: 1px solid rgb(194, 138, 234);
+    border: 1px solid #c28aea;
 
 }
 
@@ -288,4 +281,59 @@ p{
 }
 
 /*test-carroussel*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 3000px;
+    aspect-ratio: 3000 / 950;
+    margin: 0 auto;
+    overflow: hidden;/* cache les diapositives hors cadre */
+  }
+
+  .track { /*pour aligner les images*/
+    display: flex;
+    height: 100%;
+    transition: transform .7s cubic-bezier(.65, 0, .35, 1);
+  }
+
+  .slide {
+    flex: 0 0 100%;   
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;  
+    background-position: center;
+    color: #fff;
+  }
+
+
+  .slide:nth-child(1) { background-image: url("img/fanzine-futur/fanzine-bandeau.jpg"); }
+  .slide:nth-child(2) { background-image: url("img/babyboo/babyboo-bandeau.jpg"); }
+  .slide:nth-child(3) { background-image: url("img/gangsters/gangster.jpg");}
+  .slide:nth-child(4) { background-image: url("img/kabane-cafe/kabane-bandeau.jpg");}
+  .slide:nth-child(5) { background-image: url("img/photo/photo-bandeau.jpg");}
+  .slide:nth-child(6) { background-image: url("img/minuscule/minuscule-bandeau.jpg");}
+
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.2em; height: 3.2em;
+    border: 0;
+    border-radius: 50%;
+    background-color: #00000000;
+    color: #c28aea;
+    font-size: clamp(.7rem, 1.2vw, 1.2rem);
+    cursor: pointer;
+  }
+  .arrow:hover { background: #ffffff73; }
+  .prev { left: 2%; }
+  .next { right: 2%; }
+  
+  .arrow:focus-visible, .dot:focus-visible, .slide-text a:focus-visible {
+    outline: 3px solid #ffd54a;
+    outline-offset: 2px;
+  }
 
