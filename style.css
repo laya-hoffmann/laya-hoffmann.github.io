@@ -28,7 +28,7 @@ header{
     align-items: top;
     padding: 20px;
     border-bottom: 2px solid rgb(194, 138, 234);
-    height: 28px;    
+    height: 38px;    
 }
 
 img{
@@ -41,6 +41,7 @@ img{
 a{
     color: rgb(194, 138, 234);
     margin: 0;
+    text-decoration: none;
 }
 
 h1{
@@ -161,18 +162,18 @@ p{
 }
 
 /*le hover des images*/
-
 .item-grid{
             display: grid;
             height: 500px;
         }
 
-.item-grid a, .item-grid .fx{
+.item-grid img{
             grid-column: 1/-1;
             grid-row: 1/-1;
 }
 
 .item-grid .fx {
+            z-index: 9999;
             color:#000000;
             background: #ffffffc4;
             margin: 0;
@@ -219,6 +220,12 @@ p{
     .cadegage{
         display:none;
     
+    }
+    .item-grid .fx {
+        height: 220px;
+    }
+    .item-grid{
+        height: auto;
     }
 
 }
