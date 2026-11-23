@@ -129,7 +129,7 @@ p{
 /*bouton quand on clique*/
 .button:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(194, 138, 234);
+    background-color: #c28aea;
     padding: 6px;
     text-decoration: none;
     border: 1px solid rgb(194, 138, 234);
