@@ -175,7 +175,7 @@ p{
 .item-grid .fx {
             z-index: 9999;
             color:#000000;
-            background: #ffffffc4;
+            background: #ffffff00;
             margin: 0;
             opacity:0;
             transition: .4s;
@@ -223,6 +223,7 @@ p{
     }
     .item-grid .fx {
         height: 220px;
+        background-color: rgba(255, 255, 255, 0);
     }
     .item-grid{
         height: auto;
