@@ -39,7 +39,7 @@ img{
 
 /*liens*/
 a{
-    color: rgb(194, 138, 234);
+    color: rgb(0, 0, 0);
     margin: 0;
     text-decoration: none;
 }
@@ -66,6 +66,11 @@ p{
     color: #c28aea;
 }
 
+.taille2{
+    font-size: 25px;
+    color: #ffffff;
+}
+
 /*ce qui n'est pas affiché sur mobile*/
 .cadegage{
     color: #000000;
@@ -88,6 +93,11 @@ p{
     padding: 30px;
 }
 
+.grid-menu{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+
 .grid-projet{
     background-color: rgb(255, 255, 255);
     display: grid;
@@ -107,6 +117,15 @@ p{
     align-items: center;
 }
 
+.button2{
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s background;
+    align-items: center;
+}
+
 /*bouton quand on clique*/
 .button:hover{
     color: rgb(255, 255, 255);
@@ -116,11 +135,36 @@ p{
     border: 1px solid rgb(194, 138, 234);
 }
 
+.button2:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 138, 234);
+    padding: 6px;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.lien{
+    color: #000000;
+}
+
+.lien:hover{
+    color: #ffffff;
+    transition: 0.5s background;
+}
+
 /*futur carroussel*/
 .bandeau{
     background-color: rgb(0, 0, 0);
     width: 100%;
     margin-bottom: 20px;
+}
+
+.menu{
+    background-color: #c28aea;
+}
+
+.border{
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 
