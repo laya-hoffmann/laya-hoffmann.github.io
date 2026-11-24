@@ -61,6 +61,10 @@ p{
 
 
 /*CSS CLASS*/
+
+.margin{
+    margin-top: 0;
+}
 .violet{
     color: #c28aea;
 }
@@ -96,6 +100,12 @@ p{
     padding: 30px;
 }
 
+.gridbutton{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
 .grid-menu{
     background-color: rgba(255, 255, 255, 0);
     padding: 20px;
@@ -129,6 +139,17 @@ p{
     align-items: center;
 }
 
+.button3{
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s background;
+    align-items: center;
+    height: 25px;
+    width: 30px;
+}
+
 /*bouton quand on clique*/
 .button:hover{
     color: rgb(255, 255, 255);
@@ -139,6 +160,14 @@ p{
 }
 
 .button2:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 138, 234);
+    padding: 6px;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.button3:hover{
     color: rgb(255, 255, 255);
     background-color: rgb(194, 138, 234);
     padding: 6px;
@@ -238,6 +267,16 @@ p{
             opacity:1;
 }
 
+.footer{
+    font-size: 10px;
+    font-family: "strawford";
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*animation bandeau*/
 @keyframes scroll-left { 
@@ -277,7 +316,6 @@ p{
     .item-grid{
         height: auto;
     }
-
 }
 
 /*test-carroussel*/
