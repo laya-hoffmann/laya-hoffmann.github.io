@@ -100,6 +100,13 @@ p{
     padding: 30px;
 }
 
+.grid2 {
+        grid-template-columns: 1fr; 
+        padding: 30px;
+        align-items: center;
+        
+}
+
 .gridbutton{
     gap: 15px;
     display: grid;
@@ -361,12 +368,12 @@ p{
     width: 3.2em; height: 3.2em;
     border: 0;
     border-radius: 50%;
-    background-color: #00000000;
+    background-color: #ffffff7b;
     color: #c28aea;
     font-size: clamp(.7rem, 1.2vw, 1.2rem);
     cursor: pointer;
   }
-  .arrow:hover { background: #ffffff73; }
+  .arrow:hover { background: #ffffffda; }
   .prev { left: 2%; }
   .next { right: 2%; }
   
