@@ -211,7 +211,8 @@ p{
     position: relative; /*pour pouvoir déplacer le texte*/
     color: rgb(194, 138, 234); 
     margin-bottom: 50px;
-    border: 2px solid rgb(194, 138, 234); 
+    border-top: 2px solid rgb(194, 138, 234);
+    border-bottom: 2px solid rgb(194, 138, 234); 
 
 }
 
